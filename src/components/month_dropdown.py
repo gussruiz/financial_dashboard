@@ -5,6 +5,8 @@ from dash.dependencies import Input, Output
 from ..data.loader import DataSchema
 from . import ids
 
+import i18n
+
 
 def render(app: Dash, data: pd.DataFrame) -> html.Div:
     all_months: list[str] = data[DataSchema.MONTH].tolist()
